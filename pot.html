@@ -5,27 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>포트폴리오 사이트</title>
     <style>
-      /* 스타일링을 위한 CSS 코드 */
-      body {
-        font-family: Arial, sans-serif;
+      ul {
+        display: flex;
         margin: 0;
         padding: 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        list-style: none;
       }
-      header {
-        background-color: #333;
-        color: #fff;
-        padding: 20px;
+      ul li {
+        width: 20%;
+      }
+      ul li:not(:first-child) {
+        border-left: 1px solid #ccc;
+      }
+      ul li a {
+        display: block;
+        padding: 1em 3.5em;
+        color: #333;
+        font: 400 18px/1 "Open Sans", sans-serif;
+        text-decoration: none;
         text-align: center;
       }
-      section {
-        padding: 50px;
-        text-align: center;
+      ul:hover li a {
+        opacity: 0.3;
+        color: aqua;
       }
-      h1 {
-        font-size: 24px;
-      }
-      p {
-        font-size: 18px;
+      ul li a:hover {
+        opacity: 1;
+        color: azure;
       }
     </style>
   </head>

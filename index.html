@@ -9,7 +9,11 @@
       }
 
 
-      a { text-decoration:none }
+      a { 
+        text-decoration:none;
+        
+      }
+      
       .recipe img {
         display: block;
         margin: 0 auto;
@@ -51,21 +55,41 @@
       div {
         color: #1951d4;
         background-color: #edf2fb;
+        
       }
 
       p {
         color: #000000;
+        margin: 10;
+        width: 500px;
+        height: 100px;
+
+        position: relative;
+        
+        
       }
       li {
         list-style-type: "♬  "; 
       }
+    
+      .sobul:hover {
+        color: #ff0000;
+      }
+      .cream:hover {
+        color: aqua;
+      }
+      .kimchi:hover {
+        color: rgba(190, 148, 69, 0.89);
+      }
+      .sobul {
+        color: #5ca2b8;
+      }
+
+      .kimchi {
+        color: rgb(243, 59, 166);
+        background-color: #ccdbfd;
       
-
-      /* h2 {
-        color: ;
-        background-color: ;
-      } */
-
+      }
 
     </style>
   </head>
@@ -73,16 +97,17 @@
   <body style="background-color: #ffffff;" border-box="border-collapse: collapse">
     <h1>내가 좋아하는 요리 레시피</h1>
     <ul>
-      <li ><a href="#section1" style="color: #0b313d;" >소불고기</a></li>
-      <li><a href="#section2" >크림파스타</a></li>
-      <li><a href="#section3" >김치필라프</a></li>
+      <!-- style="color: #0b313d;" -->
+      <li ><a class="sobul" href="#section1" >소불고기</a></li>
+      <li><a class="cream" href="#section2" >크림파스타</a></li>
+      <li><a class="kimchi" href="#section3" >김치필라프</a></li>
     </ul>
   </header>
 
     <div class="recipe">
       <br/>
       <h2>
-        <a href="https://www.10000recipe.com/recipe/6879215" target="_blank"  >소불고기</a>
+        <a href="https://www.10000recipe.com/recipe/6879215" target="_blank" style="color: #0b313d;" >소불고기</a>
       </h2>
       <br>
       <div ><img src="소불고기.jpg" alt="소불고기" /></div>
@@ -158,7 +183,7 @@
 
 
       <h3><a href="https://www.10000recipe.com/recipe/6879215#best_tit#stepDiv1" style="text-decoration: none;" target="_blank">조리 순서: </a></h3>
-      <ol>
+      <ol style="color: #121325;">
         <li>소고기 등심에 설탕 4스푼, 물엿 2스푼을 넣어요.</li>
         <br>
         <li>
@@ -269,7 +294,7 @@
         </ul> -->
   
         <h3><a href="https://www.10000recipe.com/recipe/6901938#stepDiv1" style="text-decoration: none;" target="_blank">조리 순서: </a></h3>
-        <ol>
+        <ol style="color: #121325;">
           <li>크림파스타를 만들기 위해
             필요한 재료들을 알려드릴게요.
             올리브유 약간, 파스타 건면 1인분, 베이컨 작은 거 4장, 체다치즈 2장, 소금 약간, 후추 약간, 흰우유 180ml, 양송이버섯 2개, 다진 마늘 한 스푼, 버터 한 숟갈, 채 썬 양파 적당량</li>
@@ -403,7 +428,7 @@
         </ul> -->
 
         <h3><a href="https://www.10000recipe.com/recipe/6998765#stepDiv1" style="text-decoration: none;" target="_blank">조리 순서: </a></h3>
-        <ol>
+        <ol style="color: #121325;">
           <li>쌀은 씻어 물을 부어 불려요.</li>
           <br>
           <li>김치, 베이컨, 양파, 버섯, 마늘은 큼직하게 다져요.</li>
