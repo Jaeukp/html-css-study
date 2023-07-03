@@ -3,66 +3,105 @@
   <head>
     <title>my recipe</title>
     <style>
+      body{
+        width: 520px;
+        margin: 0 auto;
+      }
+
+
+      a { text-decoration:none }
       .recipe img {
         display: block;
         margin: 0 auto;
         max-width: 200;
         max-height: 400;
+        height:30vh;
+        width: 45vh;
+        
       }
 
       header > h1  {
-        background-color:#003049;
-        color: #ffffff;
+        background-color:#ccdbfd;
+        color: #000000;
         /* background-color: #22577a; */
       }
 
       h2 {
-        background-color: #fdf0d5;
+        text-align: center;
+        margin: 0 auto;
+        width: 130px;
+        border-style: groove;
+        border-radius: 5%;
+        
+        background-color: #ccdbfd;
         color: #000000;
       }
 
-      div {
-        color: #ffe5fd;
-        background-color: #669bbc;
+      h3 {
+        background-color: none;
+        color: #000000;
       }
+
+      td {
+        border-bottom: 1px solid black;
+         
+        
+      }
+
+      div {
+        color: #1951d4;
+        background-color: #edf2fb;
+      }
+
+      p {
+        color: #000000;
+      }
+      li {
+        list-style-type: "♬  "; 
+      }
+      
+
       /* h2 {
         color: ;
         background-color: ;
       } */
 
 
-
     </style>
   </head>
   <header>
-  <body >
+  <body style="background-color: #ffffff;" border-box="border-collapse: collapse">
     <h1>내가 좋아하는 요리 레시피</h1>
     <ul>
-      <li><a href="#section1">소불고기</a></li>
-      <li><a href="#section2">크림파스타</a></li>
-      <li><a href="#section3">김치필라프</a></li>
+      <li ><a href="#section1" style="color: #0b313d;" >소불고기</a></li>
+      <li><a href="#section2" >크림파스타</a></li>
+      <li><a href="#section3" >김치필라프</a></li>
     </ul>
   </header>
 
     <div class="recipe">
+      <br/>
       <h2>
-        <a href="https://www.10000recipe.com/recipe/6879215" target="_blank"
-          >소불고기</a
-        >
+        <a href="https://www.10000recipe.com/recipe/6879215" target="_blank"  >소불고기</a>
       </h2>
-      <img src="소불고기.jpg" alt="소불고기" />
+      <br>
+      <div ><img src="소불고기.jpg" alt="소불고기" /></div>
+      <!-- <div style="border: 2; border-radius: 8px; background-color: #6e79df; margin: 4px; padding: 6px; " align="center"> -->
+        <div >
       <p>
         이거하나면 밥한그릇 너무 쉽게 뚝딱 할 수 있죠! 너무나 맛있게 먹은 저희집
         밥도둑 소불고기 레시피입니다^^
       </p>
-        <nav>
-        <table border="3" bordercolor="gray" width ="450" height="250" class="primary">
-        <h2 id="section1"><a href="https://www.10000recipe.com/recipe/6879215#best_tit" target="_blank">재료 순서</a></h2>
-        <thead>
+      </div>
+        
+        <table border-collapse width ="450" height="250" class="primary" align="center"> 
+          <!-- bordercolor="gray" -->
+        <h3 id="section1"><a href="https://www.10000recipe.com/recipe/6879215#best_tit"  target="_blank">재료 순서: </a></h3>
+        <thead style="color: #0b313d; background-color: #edf2fb;" >
           <th>재료</th>
           <th>용량</th>
         </thead>
-        <tbody>
+        <tbody style="color: #121325; background-color: #edf2fb;">
           <tr>
             <td>소불고기</td>
             <td>700g</td>
@@ -113,38 +152,45 @@
           </tr>
         </tbody>
       </table>
-    </nav>
+    
 
       
 
 
-      <h2><a href="https://www.10000recipe.com/recipe/6879215#best_tit#stepDiv1" target="_blank">조리 순서</a></h2>
+      <h3><a href="https://www.10000recipe.com/recipe/6879215#best_tit#stepDiv1" style="text-decoration: none;" target="_blank">조리 순서: </a></h3>
       <ol>
         <li>소고기 등심에 설탕 4스푼, 물엿 2스푼을 넣어요.</li>
+        <br>
         <li>
           거기에 매실액(저는 깔라마시 꿀로 대체) 다진마늘 3스푼, 간장 12스푼
           후추 약간을 넣고 주물러 양념이 배게 해줍니다.
         </li>
+        <br>
         <li>여기에 참기름 1스푼을 넣고 주물러 30분 기다려줘요.</li>
+        <br>
         <li>기다리는 동안 야채와 버섯 손질도 샤샤샥^^</li>
+        <br>
         <li>
           재워 둔 고기에 야채를 모두 넣고 참기름을 2스푼 더 첨가한 뒤 섞어주고
           센 불에 구우면 끝!!
         </li>
+        <br>
         <li>
           아아, 제가 했지만 너무 맛있어요 ㅠㅜ ㅎㅎㅎ 혹시라도 고기 냄새에 좀
           민감하시면 청주나 맛술 한스푼 추가 추천해요~ 밥에 올려서 촵촵 정말
           맛있게 먹었어요
         </li>
+        <br>
       </ol>
 
 
       <div class="recipe">
         <h2>
-          <a href="https://www.10000recipe.com/recipe/6901938" target="_blank"
+          <a href="https://www.10000recipe.com/recipe/6901938" style="text-decoration: none;" target="_blank"
             >크림파스타</a
           >
         </h2>
+        <br>
         <img src="크림파스타.jpg" alt="크림파스타" />
         <p>
           예전에 크림파스타가 생각보다 만들기 쉽다고 들은 적이 있어서
@@ -153,13 +199,13 @@
 우리 같이 크림파스타 만들기 시작해보아요!
         </p>
 
-        <table border="3" bordercolor="gray" width ="450" height="250" >
-          <h2 id="section2"><a href="https://www.10000recipe.com/recipe/6901938#best_tit" target="_blank">재료 순서</a></h2>
-          <thead>
+        <table  width ="450" height="250" align="center">
+          <h3 id="section2"><a href="https://www.10000recipe.com/recipe/6901938#best_tit" style="text-decoration: none;" target="_blank">재료 순서: </a></h3>
+          <thead style="color: #0b313d; background-color: #edf2fb;">
             <th>재료</th>
             <th>용량</th>
           </thead>
-          <tbody>
+          <tbody style="color: #121325; background-color: #edf2fb;">
             <tr>
               <td>올리브유</td>
               <td>5 T</td>
@@ -222,7 +268,7 @@
           <li>버터</li>
         </ul> -->
   
-        <h2><a href="https://www.10000recipe.com/recipe/6901938#stepDiv1" target="_blank">조리 순서</a></h2>
+        <h3><a href="https://www.10000recipe.com/recipe/6901938#stepDiv1" style="text-decoration: none;" target="_blank">조리 순서: </a></h3>
         <ol>
           <li>크림파스타를 만들기 위해
             필요한 재료들을 알려드릴게요.
@@ -279,21 +325,21 @@
                   
         </ol>
     <div class="recipe">
-      <h2><a href="https://www.10000recipe.com/recipe/6998765" target="_blank">김치필라프</a></h2>
-      <img src="김치필라프.jpg" alt="김치필라프">
+      <h2><a href="https://www.10000recipe.com/recipe/6998765" style="text-decoration: none;" target="_blank">김치필라프</a></h2>
+      <br>      <img src="김치필라프.jpg" alt="김치필라프">
       <p>용도별로 폭넓게 식재료를 보관할 수 있는 4칸의 공간에
         ±0.3℃ 신선정온으로 식재료와 김치를 신선하게 보관하는 LG 김치톡톡
         
         NEW 유산균김치⁺ 모드로 맛있게 익은 김치로
         간편하고 맛있는 김치필라프를 만들어보세요!</p>
 
-        <table border="3" bordercolor="gray" width ="450" height="250" >
-          <h2 id = "section3"><a href="https://www.10000recipe.com/recipe/6998765#stepDiv1#contents_area" target="_blank">재료 순서</a></h2>
-          <thead>
+        <table  width ="450" height="250" align="center" >
+          <h3 id = "section3"><a href="https://www.10000recipe.com/recipe/6998765#stepDiv1#contents_area" style="text-decoration: none;" target="_blank">재료 순서: </a></h3>
+          <thead style="color: #0b313d; background-color: #edf2fb;">
             <th>재료</th>
             <th>용량</th>
           </thead>
-          <tbody>
+          <tbody style="color: #121325; background-color: #edf2fb;" >
             <tr>
               <td>쌀</td>
               <td>1 종이컵</td>
@@ -341,7 +387,7 @@
             
           </tbody>
         </table>
-        <h2 id = "section3"><a href="https://www.10000recipe.com/recipe/6998765#stepDiv1#contents_area" target="_blank">재료 순서</a></h2>
+        <!-- <h2 id = "section3"><a href="https://www.10000recipe.com/recipe/6998765#stepDiv1#contents_area" target="_blank">재료 순서</a></h2> -->
         <!-- <ul>
           <li>쌀</li>
           <li>베이컨</li>
@@ -356,16 +402,24 @@
           <li>후추</li>
         </ul> -->
 
-        <h2><a href="https://www.10000recipe.com/recipe/6998765#stepDiv1" target="_blank">조리 순서</a></h2>
+        <h3><a href="https://www.10000recipe.com/recipe/6998765#stepDiv1" style="text-decoration: none;" target="_blank">조리 순서: </a></h3>
         <ol>
           <li>쌀은 씻어 물을 부어 불려요.</li>
+          <br>
           <li>김치, 베이컨, 양파, 버섯, 마늘은 큼직하게 다져요.</li>
+          <br>
           <li>팬에 기름을 조금 두르고 양파, 버섯, 베이컨, 김치를 볶아내요.</li>
+          <br>
           <li>팬에 버터를 녹이고 마늘을 넣어 마늘향이 올라오게 볶아요.</li>
+          <br>
           <li>마늘이 익으면 불려 놓은 쌀을 넣어 볶아요..</li>
+          <br>
           <li>볶아진 쌀에 물과 치킨 스톡을 넣어 쌀을 저어가며 밥을 지어요.</li>
+          <br>
           <li>쌀이 익으면 볶아 놓았던 채소와 김치를 넣어요.	</li>
+          <br>
           <li>굴소스, 후추로 부족한 간을 하여 볶아 완성해요.</li>
+          <br>
         </ol>
     </div>  
     <!--  -->
