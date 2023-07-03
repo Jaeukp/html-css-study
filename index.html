@@ -3,6 +3,10 @@
   <head>
     <title>my recipe</title>
     <style>
+      header,
+      nav,
+      div,
+
       body{
         width: 520px;
         margin: 0 auto;
@@ -17,11 +21,14 @@
       .recipe img {
         display: block;
         margin: 0 auto;
-        max-width: 200;
-        max-height: 400;
-        height:30vh;
-        width: 45vh;
+        max-width: 300;
+        max-height: 500;
+        height:35vh;
+        width: 50vh;
         
+      }
+      h1 {
+        text-align: center;
       }
 
       header > h1  {
@@ -70,6 +77,9 @@
       }
       li {
         list-style-type: "♬  "; 
+        display: inline;
+        
+
       }
     
       .sobul:hover {
@@ -87,22 +97,49 @@
 
       .kimchi {
         color: rgb(243, 59, 166);
-        background-color: #ccdbfd;
-      
+      }
+      span li{
+        display: inline-block;
+        width: auto;
+        height: auto;
+        text-align: center;
+        margin-left: 44px;
+        font-size: 17px;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1em;
+        
+        
+      }
+      /* ul {
+        background-color: #dfe7ff;
+        height: auto;
+      } */
+      nav {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        background-color: #ffffff62;
+        padding: auto;
+        
       }
 
     </style>
   </head>
   <header>
-  <body style="background-color: #ffffff;" border-box="border-collapse: collapse">
+  <body style="background-color: #ffffff;" >
     <h1>내가 좋아하는 요리 레시피</h1>
-    <ul>
+  </header>
+    <span>
+      <nav>
+        <ul >
       <!-- style="color: #0b313d;" -->
-      <li ><a class="sobul" href="#section1" >소불고기</a></li>
+      <li><a class="sobul" href="#section1"  >소불고기</a></li>
       <li><a class="cream" href="#section2" >크림파스타</a></li>
       <li><a class="kimchi" href="#section3" >김치필라프</a></li>
-    </ul>
-  </header>
+        </ul>
+      </nav>
+    </span>
+  
 
     <div class="recipe">
       <br/>
