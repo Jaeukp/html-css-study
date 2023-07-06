@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 2000px;
+        margin: 0;
+        padding: 0;
+      }
+
+      .box {
+        width: 100px;
+        height: 100px;
+        /* absolute: 절대적인 */
+        /* 문서의 위치기준으로 요소를 배치 */
+
+        /* 부모요소에 relative가 있으면 */
+        /* 부모 요소의 위치 기준으로 배치 */
+
+        position: absolute;
+
+        /* fixed: 고정된 */
+        /* 브라우저 뷰포트(표시영역) 기준 */
+      }
+
+      .red {
+        background-color: rgb(80, 230, 167);
+        /* 0,0 */
+        /* left, x축 좌표 */
+        left: 10px;
+        /* top, y축 좌표 */
+        top: 10px;
+      }
+
+      .green {
+        background-color: rgb(132, 228, 223);
+        left: 210px;
+        top: 10px;
+      }
+
+      .blue {
+        background-color: teal;
+        left: 110px;
+        top: 110px;
+      }
+
+      .wrapper {
+        /* 포지션 기준을 이곤으로 초기화 */
+        position: relative;
+        border: 1px solid seagreen;
+        height: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- html의 기본 요소의 배치 -->
+    <!-- position: static -->
+    <!-- block 위에서 아래로 -->
+    <!-- inline 시작에서 끝으로(left to right) -->
+    <h1>고정 위치입니다.</h1>
+    <div class="wrapper">
+      <div class="box red"></div>
+      <div class="box green"></div>
+      <div class="box blue"></div>
+      <div class="box orenge"></div>
+    </div>
+  </body>
+</html>

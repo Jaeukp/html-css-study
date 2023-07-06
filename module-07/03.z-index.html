@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 2000px;
+        background-color: antiquewhite;
+      }
+
+      .box {
+        width: 100px;
+        height: 100px;
+
+        position: fixed;
+      }
+      div {
+        border: 1px;
+      }
+      /* .red {
+        background-color: rgb(80, 230, 167);
+        left: 10px;
+        top: 10px;
+        z-index: -200;
+      }
+
+      .green {
+        background-color: rgb(132, 228, 223);
+        left: 50px;
+        top: 50px;
+        z-index: -200;
+      }
+
+      .blue {
+        background-color: teal;
+        left: 90px;
+        top: 90px;
+        z-index: -200;
+      } */
+      .red {
+        background-color: rgb(80, 230, 167);
+        left: 10px;
+        top: 10px;
+        z-index: 100;
+      }
+
+      .green {
+        background-color: rgb(132, 228, 223);
+        left: 210px;
+        top: 10px;
+      }
+
+      .blue {
+        background-color: teal;
+        left: 110px;
+        top: 110px;
+      }
+
+      .orenge {
+        background-color: tomato;
+        left: 310px;
+        top: 110px;
+      }
+      .yellow {
+        background-color: crimson;
+        left: 410px;
+        top: 10px;
+      }
+      .gray {
+        background-color: slategray;
+        left: 210px;
+        top: 210px;
+      }
+      div .red:hover + h2 {
+        display: inline;
+      }
+      h2 {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="box red">
+        <h2><img src="라자냐.jpg" /></h2>
+      </div>
+      <div class="box green"></div>
+      <div class="box blue"></div>
+      <div class="box orenge"></div>
+      <div class="box yellow"></div>
+      <div class="box gray"></div>
+    </div>
+  </body>
+</html>
