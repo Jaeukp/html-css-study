@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      nav,
+      main,
+      aside,
+      article,
+      section {
+        border: 2px solid gold;
+      }
+
+      main {
+        display: flex;
+        width: 100%; /*  메인에 너비 주기 */
+      }
+      aside {
+        flex-grow: 1; /* 비율 3중에 1 주기, 부모가 flex라서 가능 */
+        height: 200px;
+      }
+      article {
+        display: flex;
+        flex-grow: 2; /* 비율 3중에 2 주기 */
+        height: 200px;
+      }
+      section {
+        width: 100%; /* 비율 2를 가져간 알티클 기준 반반씩 가져감 */
+        height: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </nav>
+    <main>
+      <aside></aside>
+      <article>
+        <section></section>
+        <section></section>
+      </article>
+    </main>
+  </body>
+</html>

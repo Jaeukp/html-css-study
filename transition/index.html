@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        /* margin-left: 100px;
+        margin-top: 100px; */
+        height: 100px;
+        width: 100px;
+        background-color: aqua;
+        border: 1px solid black;
+        border-radius: 50%;
+
+        /* transition : s/ms */
+        /* transition : 지속시간 지연시간 타이밍함수 */
+        /* transition : 적용할속성 지속시간 지연시간 타이밍함수 */
+        /* 적용할 속성은 기본이 all */
+        /* transition-duration: 지속시간: */
+        /* transition: 0.7s; */
+        /* transition-duration: 1s; */
+        transition: all 0.4s 0.2s cubic-bezier(0, 0.8, 1, 1.51);
+        /* transition: 지속시간 timing-function */
+        transition-timing-function: ease-in-out;
+      }
+
+      div:hover {
+        /* width: 150px;
+        height: 150px; */
+
+        /* tranform: 변령시킬함수(값) */
+        /* scale(배수값-실수) */
+        /* transform: scale(1.5);
+        background-color: crimson;
+        transform-origin: center; */
+
+        /* rotate(값deg) */
+        /* 회전 */
+        background-color: thistle;
+        /* transform: rotateY(1080deg);
+        transition-timing-function: ease-in-out;
+        transform: 1 0.3; */
+        /* text-transform: var(change); */
+        /* transform-origin: left; */
+        transform: translateX(500px) rotate(360deg) skew(360deg) scale(1.4);
+        /* 기본이 center*/
+        /* transform 기준 위치 변경 */
+      }
+
+      div:active {
+        /* width: 250px;
+        height: 250px; */
+        transform: scale(4.5);
+        transform-origin: left top;
+        background-color: rgb(71, 255, 117);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 트랜지션(transition)이란 속성 값의 변화가 있을 때 중간 과정을 표현 -->
+    <!-- 속성 값은 숫자이거나 숫자로 표현할수있는 경우-->
+    <div><p>Lorem, ipsum dolor sit amet consectetur.</p></div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni qui
+      excepturi doloremque iusto nulla molestias quidem expedita similique
+      consequatur neque fuga nemo sunt illo architecto modi eos, non blanditiis
+      reiciendis.
+    </p>
+  </body>
+</html>
